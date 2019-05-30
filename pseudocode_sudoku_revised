@@ -1,0 +1,98 @@
+// Make a sudoku sovler
+
+// store the elements of the mainGrid in a 2d array and access the individual cells of the mainGrid from there. Let r1 to r9 be rows of the  mainGrid.
+
+mainGrid = [ [r1], 
+            [r2], ......, 
+            [r9]]
+
+// write a function to identify cells in individual rows 
+rowIndex = function {
+row1 = [[0,0], [0,1], [0,2], [0,3], [0,4], [0,5], [0,6], [0,7], [0,8] ]
+similarly find index for other rows(2-9) and store it in this function.
+}
+
+// write a function to identify cells in individual columns
+columnIndex = function {
+column1 = [[0,0], [0,1], [0,2], [0,3], [0,4], [0,5], [0,6], [0,7], [0,8] ]
+similarly find index for other columns(2-9) and store it in this function.
+}
+
+//write a function to identify and call individual subgrid 
+subGridIndex = function{
+subGrid1 = [[0,0], [0,1], [0,2]
+            [1,0], [1,1], [1,2]
+            [2,0], [2,1], [2,2]]
+ similarly find index for other subgrids(2-9) and store it in this function
+}
+
+// write a function to fill only one missing number in a row
+
+missingInRow = function {
+    if only one empty cell in row then
+    check rowIndex for 1-9 and fill in the missing number;
+}
+
+// write a function to fill only one missing number in a row
+missingInColumn = function {
+    if only one empty cell in column then
+    check columnIndex for 1-9 and fill in the missing number;
+}
+
+// write a function to fill only one missing number in a row
+missingInSubgrid = function {
+    if only one empty cell in subgrid then
+    check subGridIndex for 1-9 and fill in the missing number;
+}
+
+// write a function to check if a number between 1-9 can be placed in a row
+
+function checkRow{
+    for row1 check each element{
+        if number can be placed in the row then return true
+        else go to next row and repeat check
+        if not a number cannot be placed then return false
+    repeat for other rows upto row9;
+    }
+}
+
+// write a function to check if a number between 1-9 can be placed in a column
+
+function checkColumn{
+    for column1 check each element{
+            if number can be placed in the row then return true
+            else go to next row and repeat check
+            if not a number cannot be placed then return false
+            repeat for other columns upto column9;
+    }
+}
+
+// write a function to check if a number between 1-9 can be placed in a subGrid1Index
+
+function checkSubGrid{
+    for subGrid1 {
+        if there is no 
+    }
+}
+
+// write a function to place a number in a valid cell
+
+function placeNumber ={
+
+    switch ()
+    {
+        case a: checkRow() is true && checkColumn() is true && checkSubGrid is true 
+        then place the number in the cell and repeat process for same number
+        break;
+        case b: checkRow() is true && checkColumn() is true but checkSubGrid is false
+        then go to next number (1-9) and repeat.
+        break;
+        case c: only checkRow() || checkColumn() || checkSubgrid is true
+        then go next number.
+    }
+    return switch();   
+}
+
+// output the puzzle to the console
+console.log(placeNumber)
+
